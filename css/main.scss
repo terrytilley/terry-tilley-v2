@@ -1,0 +1,25 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+// $base-font-family: "Varela Round", Helvetica, Arial, sans-serif;
+$grey: #9baec8;
+$github-color: #171516;
+$twitter-color: #00aced;
+$linkedin-color: #007bb6;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import
+  "bourbon/bourbon",
+  "base/base",
+  "neat/neat",
+  "base",
+  "header",
+  "footer",
+  "home",
+  "articles"
+;

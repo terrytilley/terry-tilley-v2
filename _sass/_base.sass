@@ -1,0 +1,40 @@
+body
+  font-family: 'Nunito', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Nunito', sans-serif
+
+.wrapper
+  +outer-container
+  position: relative
+
+hr.doubled
+  padding: 0
+  border: none
+  border-top: medium double $grey
+  color: #333
+  text-align: center
+  width: 300px
+  margin-left: auto
+  margin-right: auto
+  &:after
+    color: $grey
+    content: "💻"
+    display: inline-block
+    position: relative
+    top: -0.7em
+    font-size: 1.5em
+    padding: 0 0.25em
+    background: white
+
+/**
+ * Icons
+ */
+.icon
+  > svg
+    display: inline-block
+    width: 16px
+    height: 16px
+    vertical-align: middle
+    path
+      fill: grey

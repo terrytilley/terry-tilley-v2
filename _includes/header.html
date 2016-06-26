@@ -1,0 +1,34 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu">
+      <ul>
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-info">
+      <img class="profile-pic" src="{{ "/images/terry.jpg" | prepend: site.baseurl }}" alt="Profile Pic">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <p><em>{{ site.tagline }}</em></p>
+      <br>
+      <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> Studying at <a href="http://www.makersacademy.com/" target="_blank">Makers Academy</a></p>
+      <hr>
+      <div class="social-links">
+        <a id="github" href="http://github.com/terrytilley" target="_blank"><i class="fa fa-github"></i></a>
+        <a id="twitter" href="http://twitter.com/terrytilley8" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a id="linkedin" href="http://uk.linkedin.com/in/terrytilley" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+</header>
