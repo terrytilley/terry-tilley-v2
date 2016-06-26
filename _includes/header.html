@@ -16,7 +16,9 @@
     </div>
 
     <div class="site-info">
-      <img class="profile-pic" src="{{ "/images/terry.jpg" | prepend: site.baseurl }}" alt="Profile Pic">
+      <a href="{{ site.baseurl }}/">
+        <img class="profile-pic" src="{{ "/images/terry.jpg" | prepend: site.baseurl }}" alt="Profile Pic">
+      </a>
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
       <p><em>{{ site.tagline }}</em></p>
       <br>
